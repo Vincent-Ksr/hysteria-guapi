@@ -55,19 +55,33 @@ acl:
 > 其他配置完全与hysteria文档的一致，可以查看hysteria2官方文档 [点击查看](https://hysteria.network/zh/docs/getting-started/Installation/) 
 ### 一键acme证书
 自行安装openssl、curl、socat
+
 #Debian/ubuntu
+
 apt-get install openssl
+
 apt-get install curl
+
 apt-get install socat
+
 #centos
+
 yum install -y openssl curl socat
+
 curl https://get.acme.sh | sh -s email=office121233@outlook.com
+
 ~/.acme.sh/acme.sh --upgrade --auto-upgrade
+
 可选：切换申请letsencrypt的证书，~/.acme.sh/acme.sh --set-default-ca --server letsencrypt
+
 example.com换成你自己的后端vps绑定域名
+
 ~/.acme.sh/acme.sh --issue -d example.com --standalone
+
 ~/.acme.sh/acme.sh --install-cert -d example.com --key-file /etc/hysteria/example.com.key
+
 ~/.acme.sh/acme.sh --install-cert -d example.com --fullchain-file /etc/hysteria/example.com.crt
+
 
 ### 启动docker compose
 docker compose up -d
