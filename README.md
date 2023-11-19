@@ -11,15 +11,22 @@
 
 ### 安装docker，docker compose
 curl -fsSL https://get.docker.com | bash -s docker
+
 sudo systemctl start docker
+
 sudo systemctl enable docker
+
 docker --version
+
 docker compose version
 
 ### 下载并修改配置文件docker-compose.yml,server.yaml,包括前端信息和后端域名
 cd /etc
+
 mkdir hysteria
+
 git clone https://github.com/isisno/hysteria2-v2b.git hysteria
+
 cd /etc/hysteria
 ### 示例配置
 ```
