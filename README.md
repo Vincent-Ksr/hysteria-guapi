@@ -11,11 +11,11 @@
 
 ### 安装docker，docker compose
 ```
-`curl -fsSL https://get.docker.com | bash -s docker
-`sudo systemctl start docker
-`sudo systemctl enable docker
-`docker --version
-`docker compose version
+curl -fsSL https://get.docker.com | bash -s docker
+sudo systemctl start docker
+sudo systemctl enable docker
+docker --version
+docker compose version
 ```
 ### 下载并修改配置文件docker-compose.yml,server.yaml,包括前端信息和后端域名
 ```
