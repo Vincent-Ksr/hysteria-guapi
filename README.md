@@ -67,6 +67,7 @@ apt-get install socat
 #centos
 
 yum install -y openssl curl socat
+#以下是证书申请和安装
 
 curl https://get.acme.sh | sh -s email=office121233@outlook.com
 
