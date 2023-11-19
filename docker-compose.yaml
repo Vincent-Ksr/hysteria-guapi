@@ -1,0 +1,8 @@
+version: '3'
+services:
+  hysteria2:
+    image: ghcr.io/cedar2025/hysteria:v1.0.5
+    network_mode: "host"
+    volumes:
+      - ./:/etc/hysteria/
+    restart: always
