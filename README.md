@@ -25,7 +25,7 @@ cd /etc
 
 mkdir hysteria
 
-git clone https://github.com/isisno/hysteria2-v2b.git hysteria
+git clone https://github.com/Vincent-Ksr/hysteria2-v2b.git hysteria
 
 cd /etc/hysteria
 ### 示例配置
